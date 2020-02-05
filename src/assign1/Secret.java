@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class AAA {
+public class Secret {
     public static void main(String[] args) throws Exception {
         String str = "Hello";
 
