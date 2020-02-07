@@ -9,13 +9,11 @@ import java.util.Scanner;
 
 public class Secret {
     public static void main(String[] args) throws Exception {
-        String str = "Hello";
-
+        // Source: http://www.java2s.com/Code/Java/File-Input-Output/Readbytesanddisplaytheirhexadecimalvalues.htm
         FileInputStream fin = new FileInputStream("/Users/My2ndAngelic/Downloads/Secret.bmp");
         int len;
-        byte data[] = new byte[16];
+        byte data[] = new byte[1];
 
-        // I used this website: http://www.java2s.com/Code/Java/File-Input-Output/Readbytesanddisplaytheirhexadecimalvalues.htm
         // Read bytes until EOF is encountered.
         StringBuilder sb = new StringBuilder();
         StringBuilder sb2 = new StringBuilder();
@@ -23,14 +21,13 @@ public class Secret {
         do {
             len = fin.read(data);
             for (int j = 0; j < len; j++) {
-//                System.out.printf("%02X ", data[j]);
                 String a = String.format("%02X",data[j]);
                     sb.append(a).append(" ");
                     arrstr.add(a);
             }
         } while (len != -1);
 
-        System.out.println(arrstr.get(54));
+        // Get 1 and 0
         for (int i = 54; i<200; i++) {
             String a = arrstr.get(i);
 
@@ -41,15 +38,13 @@ public class Secret {
                 sb2.append("0");
             }
         }
+
+        // Split them every 8th position
         for (int i = 0; i < sb2.length(); i++) {
             if (i % 9 == 0) {
                 sb2.insert(i," ");
             }
         }
         System.out.println(sb2);
-
-
-//        System.out.println(sb2);
-
     }
 }

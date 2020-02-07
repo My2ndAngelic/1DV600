@@ -1,19 +1,20 @@
 package assign1;
 
-import java.io.File;
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class Transposition {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Key requirement: contains digit 1-9, max digit must not exceed key length, no duplicate digit.");
-        System.out.print("Please enter your key: ");
+        // The next two lines is for paperwork
+        System.out.print("Do you want to [E]ncrypt (default) or [D]ecrypt: ");
+        String s = sc.nextLine();
+        System.out.println("Key requirement: contains only digit 1-9, maximum digit must not exceed key length, no duplicate digit.");
+        System.out.print("Enter your key: ");
         int key = Integer.parseInt(sc.nextLine());
-        System.out.print("Please enter your input file: ");
+        System.out.print("Enter your input path: ");
         String inloc = sc.nextLine();
-        System.out.print("Please enter your output file (will be overwritten): ");
+        System.out.print("Enter your output path (will be overwritten): ");
         String outloc = sc.nextLine();
 
         String keystr = Integer.toString(key);
@@ -27,6 +28,7 @@ public class Transposition {
             System.exit(-1);
         }
         work(inloc,outloc,keyarr);
+        sc.close();
     }
 
     static void work(String in, String out, int[] keyarr) throws Exception {
@@ -37,14 +39,16 @@ public class Transposition {
         FileHandle.write(aa,out);
     }
 
-    static String swapAndreturn(String a, int[] arr) {
+    static String swapAndreturn(String str, int[] arr) {
         int keylength = arr.length;
-        int stringlength = a.length();
+        int stringlength = str.length();
         int temp = stringlength % keylength;
         if (temp != 0) {
+            StringBuilder strBuilder = new StringBuilder(str);
             for (int i = 0; i < keylength - temp; i++) {
-                a += " ";
+                strBuilder.append(" ");
             }
+            str = strBuilder.toString();
         }
 
         double temp2 = (double) stringlength / keylength;
@@ -52,7 +56,7 @@ public class Transposition {
         String[] split = new String[temp];
         char[][] aa = new char[temp][keylength];
         for (int i = 0; i<temp; i++) {
-            split[i] = a.substring(i*keylength,(i+1)*keylength);
+            split[i] = str.substring(i*keylength,(i+1)*keylength);
         }
         for (int i = 0; i<temp; i++) {
             aa[i] = Arrays.copyOf(split[i].toCharArray(),split[i].length());
@@ -62,13 +66,13 @@ public class Transposition {
             aa[i] = swapChar(aa[i],arr);
         }
 
-        StringBuilder finalbro = new StringBuilder();
+        StringBuilder finalstr = new StringBuilder();
         for (char[] chars : aa) {
             for (char aChar : chars) {
-                finalbro.append(aChar);
+                finalstr.append(aChar);
             }
         }
-        return finalbro.toString();
+        return finalstr.toString();
     }
 
     // Find duplication

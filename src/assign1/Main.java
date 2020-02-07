@@ -8,9 +8,9 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String a = sc.nextLine();
         if (a.toUpperCase().equals("T")) {
-            Transposition.main(new String[]{});
+            Transposition.main(new String[0]);
         } else {
-            Substitution.main(new String[]{});
+            Substitution.main(new String[0]);
         }
     }
 }
