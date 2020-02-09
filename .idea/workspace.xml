@@ -2,20 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76eff6d4-8d4a-48ca-8ce2-0f23b4973f32" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assign1/Data_Hash.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign1/~$Data_Hash.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign1/Report_Template.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1DV600/assign1/FileHandle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/1DV600/assign1/FileHandle.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/1DV600/assign1/Hash.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/1DV600/assign1/Hash.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/1DV600/assign1/Report_Template.docx" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/1DV600/assign1/Report_Template.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/1DV600/assign1/Secret.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/1DV600/assign1/Secret.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1DV600/assign1/Substitution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/1DV600/assign1/Substitution.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/1DV600/assign1/Transposition.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/1DV600/assign1/Transposition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1DV600/assign1/~$Data_Hash.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign1/Data_Hash.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign1/Data_Hash.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign1/FileHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign1/FileHandle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign1/Hash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign1/Hash.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign1/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign1/Report_Template.docx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign1/Report_Template.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign1/Secret.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign1/Secret.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign1/Substitution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign1/Substitution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assign1/Transposition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign1/Transposition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign1/~$port_Template.docx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +63,20 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
-  <component name="RunManager" selected="Application.Secret">
+  <component name="RunManager" selected="Application.Hash">
+    <configuration name="AA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign1.AA" />
+      <module name="1DV600" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Hash" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="assign1.Hash" />
       <module name="1DV600" />
@@ -101,19 +116,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign1.Test" />
-      <module name="1DV600" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Transposition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="assign1.Transposition" />
       <module name="1DV600" />
@@ -129,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Secret" />
         <item itemvalue="Application.Hash" />
-        <item itemvalue="Application.Substitution" />
+        <item itemvalue="Application.AA" />
         <item itemvalue="Application.Transposition" />
-        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Secret" />
+        <item itemvalue="Application.Substitution" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +153,8 @@
       <workItem from="1580204922172" duration="6546000" />
       <workItem from="1580743573123" duration="7258000" />
       <workItem from="1580825729041" duration="20213000" />
-      <workItem from="1580950848981" duration="10921000" />
+      <workItem from="1580950848981" duration="11489000" />
+      <workItem from="1581170036722" duration="16749000" />
     </task>
     <servers />
   </component>
@@ -174,26 +177,26 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="388" y="274" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1280.777@0.23.1280.777" timestamp="1581036333058" />
-    <state width="1238" height="197" key="GridCell.Tab.0.bottom" timestamp="1581071494831">
+    <state width="1238" height="197" key="GridCell.Tab.0.bottom" timestamp="1581201976692">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="197" key="GridCell.Tab.0.bottom/0.22.1280.778@0.22.1280.778" timestamp="1580951143521" />
-    <state width="1238" height="197" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1581071494831" />
-    <state width="1238" height="197" key="GridCell.Tab.0.center" timestamp="1581071494830">
+    <state width="1238" height="197" key="GridCell.Tab.0.bottom/0.22.1280.778@0.22.1280.778" timestamp="1581191542408" />
+    <state width="1238" height="197" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1581201976692" />
+    <state width="1238" height="197" key="GridCell.Tab.0.center" timestamp="1581201976691">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="197" key="GridCell.Tab.0.center/0.22.1280.778@0.22.1280.778" timestamp="1580951143519" />
-    <state width="1238" height="197" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1581071494830" />
-    <state width="1238" height="197" key="GridCell.Tab.0.left" timestamp="1581071494830">
+    <state width="1238" height="197" key="GridCell.Tab.0.center/0.22.1280.778@0.22.1280.778" timestamp="1581191542403" />
+    <state width="1238" height="197" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1581201976691" />
+    <state width="1238" height="197" key="GridCell.Tab.0.left" timestamp="1581201976690">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="197" key="GridCell.Tab.0.left/0.22.1280.778@0.22.1280.778" timestamp="1580951143518" />
-    <state width="1238" height="197" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1581071494830" />
-    <state width="1238" height="197" key="GridCell.Tab.0.right" timestamp="1581071494831">
+    <state width="1238" height="197" key="GridCell.Tab.0.left/0.22.1280.778@0.22.1280.778" timestamp="1581191542402" />
+    <state width="1238" height="197" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1581201976690" />
+    <state width="1238" height="197" key="GridCell.Tab.0.right" timestamp="1581201976692">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="197" key="GridCell.Tab.0.right/0.22.1280.778@0.22.1280.778" timestamp="1580951143520" />
-    <state width="1238" height="197" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1581071494831" />
+    <state width="1238" height="197" key="GridCell.Tab.0.right/0.22.1280.778@0.22.1280.778" timestamp="1581191542407" />
+    <state width="1238" height="197" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1581201976692" />
     <state x="0" y="22" key="SettingsEditor" timestamp="1580799058286">
       <screen x="0" y="22" width="1280" height="778" />
     </state>

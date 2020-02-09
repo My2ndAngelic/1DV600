@@ -13,7 +13,6 @@ public class Secret {
         FileInputStream fin = new FileInputStream("/Users/My2ndAngelic/Downloads/Secret.bmp");
         int len;
         byte data[] = new byte[1];
-
         // Read bytes until EOF is encountered.
         StringBuilder sb = new StringBuilder();
         StringBuilder sb2 = new StringBuilder();
@@ -26,7 +25,6 @@ public class Secret {
                     arrstr.add(a);
             }
         } while (len != -1);
-
         // Get 1 and 0
         for (int i = 54; i<200; i++) {
             String a = arrstr.get(i);
@@ -38,7 +36,6 @@ public class Secret {
                 sb2.append("0");
             }
         }
-
         // Split them every 8th position
         for (int i = 0; i < sb2.length(); i++) {
             if (i % 9 == 0) {

@@ -11,13 +11,12 @@ public class Transposition {
         String s = sc.nextLine();
         System.out.println("Key requirement: contains only digit 1-9, maximum digit must not exceed key length, no duplicate digit.");
         System.out.print("Enter your key: ");
-        int key = Integer.parseInt(sc.nextLine());
+        String keystr = sc.nextLine();
         System.out.print("Enter your input path: ");
         String inloc = sc.nextLine();
         System.out.print("Enter your output path (will be overwritten): ");
         String outloc = sc.nextLine();
 
-        String keystr = Integer.toString(key);
         int[] keyarr = new int[keystr.length()];
         for (int i = 0; i<keystr.length(); i++) {
             keyarr[i] = Integer.parseInt(Character.toString(keystr.charAt(i)));
@@ -51,6 +50,7 @@ public class Transposition {
             str = strBuilder.toString();
         }
 
+        // Split
         double temp2 = (double) stringlength / keylength;
         temp = (int) Math.ceil(temp2);
         String[] split = new String[temp];
@@ -58,14 +58,16 @@ public class Transposition {
         for (int i = 0; i<temp; i++) {
             split[i] = str.substring(i*keylength,(i+1)*keylength);
         }
+
+        // Swap
         for (int i = 0; i<temp; i++) {
             aa[i] = Arrays.copyOf(split[i].toCharArray(),split[i].length());
         }
-
         for (int i = 0; i<temp; i++) {
             aa[i] = swapChar(aa[i],arr);
         }
 
+        // Return
         StringBuilder finalstr = new StringBuilder();
         for (char[] chars : aa) {
             for (char aChar : chars) {
@@ -107,10 +109,10 @@ public class Transposition {
         return k;
     }
 
-    // Everything larger than
-    static boolean isValidNumber(int[] arr) {
+    // Everything larger than the the digit
+    static boolean isValidDigit(int[] arr) {
         for (int a : arr) {
-            if (a <= 0) {
+            if (a <= 0 || a > 9) {
                 return false;
             }
         }
@@ -136,6 +138,6 @@ public class Transposition {
     }
 
     static boolean isValidKey(int[] arr) {
-        return findMax(arr) <= arr.length && !containDuplicate(arr) && isValidNumber(arr) && containOne(arr) && !containZero((arr));
+        return findMax(arr) <= arr.length && !containDuplicate(arr) && isValidDigit(arr) && containOne(arr) && !containZero((arr));
     }
 }

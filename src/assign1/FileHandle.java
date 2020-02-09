@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class FileHandle {
+    // Source: https://stackoverflow.com/questions/16265693/how-to-use-bufferedreader-in-java
     static String[] read(String loc) throws Exception {
         BufferedReader in = new BufferedReader(new FileReader(loc));
         String line;
@@ -12,7 +13,7 @@ public class FileHandle {
         {
             arrlist.add(line);
         }
-         in.close();
+        in.close();
         return arrlist.toArray(new String[0]);
     }
 
